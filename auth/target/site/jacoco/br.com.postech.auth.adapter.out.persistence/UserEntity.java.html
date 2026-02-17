@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserEntity.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">auth</a> &gt; <a href="index.source.html" class="el_package">br.com.postech.auth.adapter.out.persistence</a> &gt; <span class="el_source">UserEntity.java</span></div><h1>UserEntity.java</h1><pre class="source lang-java linenums">package br.com.postech.auth.adapter.out.persistence;
+
+import java.util.Set;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Builder
+@Table(name = &quot;tb_user&quot;)
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column(name = &quot;username&quot;, nullable = false)
+    private String username;
+
+    @Column(name = &quot;login&quot;, nullable = false, unique = true)
+    private String login;
+
+    @Column(name = &quot;password&quot;, nullable = false)
+    private String password;
+    @Column(name = &quot;enabled&quot;, nullable = false)
+    private boolean enabled;
+
+    public Long getId() {
+<span class="fc" id="L32">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="nc" id="L36">        this.id = id;</span>
+<span class="nc" id="L37">    }</span>
+
+    public String getUsername() {
+<span class="fc" id="L40">        return username;</span>
+    }
+
+    public void setUsername(String username) {
+<span class="nc" id="L44">        this.username = username;</span>
+<span class="nc" id="L45">    }</span>
+
+    public String getLogin() {
+<span class="fc" id="L48">        return login;</span>
+    }
+
+    public void setLogin(String login) {
+<span class="fc" id="L52">        this.login = login;</span>
+<span class="fc" id="L53">    }</span>
+
+    public String getPassword() {
+<span class="fc" id="L56">        return password;</span>
+    }
+
+    public void setPassword(String password) {
+<span class="fc" id="L60">        this.password = password;</span>
+<span class="fc" id="L61">    }</span>
+
+    public boolean isEnabled() {
+<span class="fc" id="L64">        return enabled;</span>
+    }
+
+    public void setEnabled(boolean enabled) {
+<span class="nc" id="L68">        this.enabled = enabled;</span>
+<span class="nc" id="L69">    }</span>
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = &quot;user_roles&quot;, joinColumns = @JoinColumn(name = &quot;user_id&quot;), inverseJoinColumns = @JoinColumn(name = &quot;role_id&quot;))
+    private Set&lt;RoleEntity&gt; roles;
+
+    public Set&lt;RoleEntity&gt; getRoles() {
+<span class="fc" id="L76">        return roles;</span>
+    }
+
+    public void setRoles(Set&lt;RoleEntity&gt; roleEntities) {
+<span class="fc" id="L80">        this.roles = roleEntities;</span>
+<span class="fc" id="L81">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

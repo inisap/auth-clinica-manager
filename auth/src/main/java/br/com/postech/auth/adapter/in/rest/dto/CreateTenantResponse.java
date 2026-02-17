@@ -1,0 +1,18 @@
+package br.com.postech.auth.adapter.in.rest.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.UUID;
+
+@Builder
+@Getter
+@Setter
+public class CreateTenantResponse {
+
+    private UUID idTenant;
+    private String nome;
+    private String tipo;
+
+}

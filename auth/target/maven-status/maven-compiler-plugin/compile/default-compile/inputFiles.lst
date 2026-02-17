@@ -1,0 +1,17 @@
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\dto\CreateUserResponse.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\dto\RequestCreateUserDto.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\dto\RequestLoginDto.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\dto\TokenResponse.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\mapper\UserMapper.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\in\rest\UserController.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\out\persistence\RoleEntity.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\adapter\out\persistence\UserEntity.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\application\usecases\CreateUserUseCase.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\application\usecases\ValidUserUseCase.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\AuthApplication.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\config\SecurityConfig.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\domain\exception\GlobalExceptionHandler.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\domain\exception\LoginSenhaInvalidoException.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\domain\ports\in\CreateUserPortIn.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\domain\ports\in\ValidUserPortIn.java
+C:\Users\diego\desenvolvimento-sistemas\POS_TECH_FIAP\FASE 3\auth\src\main\java\br\com\postech\auth\domain\ports\out\UserRepositoryPortOut.java

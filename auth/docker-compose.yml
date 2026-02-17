@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+
+      context: .
+      dockerfile: Dockerfile
+    container_name: container-app-ms-clinica-auth
+    restart: always
+    environment:
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+    ports:
+      - "9000:9000"
+    depends_on:
+      - postgres

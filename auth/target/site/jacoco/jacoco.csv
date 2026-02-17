@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+auth,br.com.postech.auth.adapter.out.persistence,RoleEntity,3,14,0,0,1,6,1,4,1,4
+auth,br.com.postech.auth.adapter.out.persistence,UserEntity,12,30,0,0,6,12,3,9,3,9
+auth,br.com.postech.auth.application.usecases,ValidUserUseCase,2,85,1,5,1,25,1,4,0,2
+auth,br.com.postech.auth.application.usecases,CreateUserUseCase,0,18,0,0,0,6,0,2,0,2
+auth,br.com.postech.auth.domain.exception,GlobalExceptionHandler,9,0,0,0,2,0,2,0,2,0
+auth,br.com.postech.auth.domain.exception,LoginSenhaInvalidoException,0,4,0,0,0,2,0,1,0,1
+auth,br.com.postech.auth.adapter.in.rest.mapper,UserMapper,3,30,0,0,1,12,1,2,1,2
+auth,br.com.postech.auth,AuthApplication,8,0,0,0,3,0,2,0,2,0
+auth,br.com.postech.auth.adapter.in.rest,UserController,0,27,0,0,0,8,0,3,0,3
+auth,br.com.postech.auth.config,SecurityConfig,52,128,0,0,10,23,6,7,6,7
